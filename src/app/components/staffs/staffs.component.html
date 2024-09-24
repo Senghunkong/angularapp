@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+
+<div class="container mt-5">
+<table class="table" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger">
+    <thead>
+      <tr>
+
+        <th scope="col">Staff ID</th>
+        <th scope="col">Staff Name</th>
+        <th scope="col">Staff Role</th>
+        <!-- <th scope="col">Action</th> -->
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let imes of getstafflist">
+        <td scope="row">{{imes.staff_Id}}</td>
+        <td>{{imes.staff_Name}}</td>
+        <td>{{imes.staff_Roles}}</td>
+        <!-- <td>
+          <button onclick="editRow(this)">Edit</button>
+          <button onclick="deleteRow(this)">Delete</button>
+        </td> -->
+
+
+      </tr>
+
+    </tbody>
+  </table>
+
+</div>
