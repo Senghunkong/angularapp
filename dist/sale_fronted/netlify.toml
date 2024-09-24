@@ -1,10 +1,21 @@
 [build]
   base = "sale_fronted"
   publish = "dist/sale_fronted"
-  command = "npm run build:prod"
+  command = "npm run build:production"
+
+[context.production.environment]
+  NODE_ENV = "production"
+
+[context.deploy-preview]
+  command = "npm run build:preview"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/index.html"
+  to = "/*"
   status = 301
 
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
