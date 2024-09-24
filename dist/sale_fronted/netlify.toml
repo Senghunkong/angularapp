@@ -1,6 +1,6 @@
 [build]
   base = "sale_fronted"
-  publish = "dist/"
+  publish = "dist/sale_fronted"
   command = "npm run build:prod"
 
 [[redirects]]
