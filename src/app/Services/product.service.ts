@@ -11,10 +11,10 @@ export class ProductService {
 
   getProduct()
   {
-    return this.http.get("http://localhost:5219/Sale");
+    return this.http.get("http://senghun-001-site1.jtempurl.com/Sale");
   }
   addSale(data:any)
   {
-    return this.http.post("http://localhost:5219/add_sale",data);
+    return this.http.post("http://senghun-001-site1.jtempurl.com/add_sale",data);
   }
 }
