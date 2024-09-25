@@ -10,8 +10,8 @@
   command = "npm run build:preview"
 
 [[redirects]]
-  from = "/index.html"
-  to = "/*"
+  from = "/*"
+  to = "/index.html"
   status = 200
 
 [[headers]]
