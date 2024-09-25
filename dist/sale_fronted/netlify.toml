@@ -1,5 +1,5 @@
 [build]
-  base = "sale_fronted/"
+  base = "./"
   publish = "dist/sale_fronted"
   command = "npm run build:production"
 
