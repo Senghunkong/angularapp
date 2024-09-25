@@ -11,7 +11,7 @@ export class ProductService {
 
   getProduct()
   {
-    return this.http.get("http://senghun-001-site1.jtempurl.com/Sale");
+    return this.http.get("http://senghun-001-site1.jtempurl.com/Product");
   }
   addSale(data:any)
   {
