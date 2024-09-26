@@ -52,7 +52,7 @@ export class SaleComponent implements  OnInit {
     console.log("get product");
     this.productSV.getProduct().subscribe((res:any)=>
     {
-      console.log(res.results)
+      console.log(res)
      // console.log("here is message console :"+res.result[0])
        if(res.status==="Succussed")
        {
