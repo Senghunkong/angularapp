@@ -10,6 +10,6 @@ export class StafflistsService {
 
   getstafflist()
   {
-    return this.http.get("http://senghun-001-site1.jtempurl.com/stafflists")
+    return this.http.get("https://senghun-001-site1.jtempurl.com/stafflists")
   }
 }

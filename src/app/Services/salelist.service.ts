@@ -11,7 +11,7 @@ export class SalelistService   {
 
   getSaleList()
   {
-    return this.http.get("http://senghun-001-site1.jtempurl.com/SaleList");
+    return this.http.get("https://senghun-001-site1.jtempurl.com/SaleList");
   }
 
 
