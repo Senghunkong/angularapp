@@ -124,11 +124,11 @@ export class SaleComponent implements  OnInit {
 
     this.salelistSV.getSaleList().subscribe((res :any) =>
     {
-      //console.log(res)
+      console.log(res)
      
       if(res.status==="Successed")
       {
-        this.salelist = res.result;
+        this.salelist = res.results;
         this.dtTrigger.next(this.dtOptions);
       }
 
