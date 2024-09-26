@@ -55,7 +55,7 @@ export class SaleComponent implements  OnInit {
        if(res.status==="Succussed")
        {
         this.productlist = res.result
-        //console.log("here is message console :"+res.result[0])
+        console.log("here is message console :"+res.result[0])
        }
     })
   }

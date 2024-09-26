@@ -1,0 +1,17 @@
+[build]
+  base = "./"
+  publish = "dist/sale_fronted"
+  command = "npm run build:production"
+
+[context.production.environment]
+  NODE_ENV = "production"
+
+[context.deploy-preview]
+  command = "npm run build:preview"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+
