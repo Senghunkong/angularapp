@@ -51,7 +51,7 @@ export class SaleComponent implements  OnInit {
   {
     this.productSV.getProduct().subscribe((res:any)=>
     {
-      console.log(res.result)
+      console.log(res.result[0])
        if(res.status==="Succussed")
        {
         this.productlist = res.result
