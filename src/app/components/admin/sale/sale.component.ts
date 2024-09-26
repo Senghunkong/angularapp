@@ -54,7 +54,7 @@ export class SaleComponent implements  OnInit {
     {
       console.log(res)
      // console.log("here is message console :"+res.result[0])
-       if(res.status==="Succussed")
+       if(res.status==="Successed")
        {
         this.productlist = res.results
         console.log("here is production results : " + this.productlist)
