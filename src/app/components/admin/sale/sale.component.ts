@@ -36,7 +36,7 @@ export class SaleComponent implements  OnInit {
   constructor(private productSV : ProductService ,
      private toastSV : ToastServicesService ,
      private productlistsv : ProductService,
-    // private salelistSV:SalelistService, 
+     private salelistSV:SalelistService, 
      private saleDetailbyidSV : SaleDetailsService ,
     private salelistbyidSV : SalelistbyidService,
   private deletesaleSV:DeletSaleService){
@@ -91,7 +91,7 @@ export class SaleComponent implements  OnInit {
     this.saleDetailbyidSV.getsaledetailbyid(data).subscribe((res:any)=>
     {
       //console.log(res.result)
-      if(res.status==="Succussed")
+      if(res.status==="Successed")
       {
         this.saledetails = res.result
     
@@ -106,7 +106,7 @@ export class SaleComponent implements  OnInit {
       console.log(res.result[0].sale_date)
     
      
-      if(res.status==="Succussed")
+      if(res.status==="Successed")
       {
         this.reviewCustid = res.result[0].customer_id
        this. reviewsaleDate =res.result[0].sale_date
@@ -122,18 +122,18 @@ export class SaleComponent implements  OnInit {
       processing: true,
     };
 
-    // this.salelistSV.getSaleList().subscribe((res :any) =>
-    // {
-    //   //console.log(res)
+    this.salelistSV.getSaleList().subscribe((res :any) =>
+    {
+      //console.log(res)
      
-    //   if(res.status==="Succussed")
-    //   {
-    //     this.salelist = res.result;
-    //     this.dtTrigger.next(this.dtOptions);
-    //   }
+      if(res.status==="Successed")
+      {
+        this.salelist = res.result;
+        this.dtTrigger.next(this.dtOptions);
+      }
 
-    // }
-    // )
+    }
+    )
   
   }
 
@@ -156,7 +156,7 @@ export class SaleComponent implements  OnInit {
     }
     this.deletesaleSV.deleteSale(data).subscribe((res:any)=>
     {
-      if(res.status==="Succussed")
+      if(res.status==="Successed")
       {
         this.toastSV.Messagebox(res.status,res.message);
         this.getsalelist()
@@ -193,7 +193,7 @@ export class SaleComponent implements  OnInit {
     {
     //console.log('here is first console'+ JSON.stringify(res))
     console.log(res)
-      if(res.status==="Succussed")
+      if(res.status==="Successed")
       {
         this.toastSV.Messagebox(res.status,res.message);
         this.getsalelist()
