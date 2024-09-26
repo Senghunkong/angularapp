@@ -8,6 +8,7 @@ import { SaleDetailsService } from 'src/app/Services/sale-details.service';
 import { SalelistService } from 'src/app/Services/salelist.service';
 import { SalelistbyidService } from 'src/app/Services/salelistbyid.service';
 import { ToastServicesService } from 'src/app/Services/toast-services.service';
+//import { ProductService } from 'src/app/Services/product.service';
 
 declare const $:any
 
@@ -32,8 +33,11 @@ export class SaleComponent implements  OnInit {
   boolview :boolean =false;
   dtOptions: ADTSettings = {};
   dtTrigger = new Subject<ADTSettings>();
-  constructor(private productSV : ProductService , private toastSV : ToastServicesService ,
-     private salelistSV:SalelistService, private saleDetailbyidSV : SaleDetailsService ,
+  constructor(private productSV : ProductService ,
+     private toastSV : ToastServicesService ,
+     private productlistsv : ProductService,
+    // private salelistSV:SalelistService, 
+     private saleDetailbyidSV : SaleDetailsService ,
     private salelistbyidSV : SalelistbyidService,
   private deletesaleSV:DeletSaleService){
   }
@@ -47,7 +51,7 @@ export class SaleComponent implements  OnInit {
   {
     this.productSV.getProduct().subscribe((res:any)=>
     {
-     // console.log(res.result)
+      console.log(res.result)
        if(res.status==="Succussed")
        {
         this.productlist = res.result
@@ -115,18 +119,18 @@ export class SaleComponent implements  OnInit {
       processing: true,
     };
 
-    this.salelistSV.getSaleList().subscribe((res :any) =>
-    {
-      //console.log(res)
+    // this.salelistSV.getSaleList().subscribe((res :any) =>
+    // {
+    //   //console.log(res)
      
-      if(res.status==="Succussed")
-      {
-        this.salelist = res.result;
-        this.dtTrigger.next(this.dtOptions);
-      }
+    //   if(res.status==="Succussed")
+    //   {
+    //     this.salelist = res.result;
+    //     this.dtTrigger.next(this.dtOptions);
+    //   }
 
-    }
-    )
+    // }
+    // )
   
   }
 
