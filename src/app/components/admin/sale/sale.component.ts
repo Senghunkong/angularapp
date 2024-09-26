@@ -49,6 +49,7 @@ export class SaleComponent implements  OnInit {
    itemslist : any=[]
   getproduct()
   {
+    console.log("get product");
     this.productSV.getProduct().subscribe((res:any)=>
     {
       console.log(res.result)
