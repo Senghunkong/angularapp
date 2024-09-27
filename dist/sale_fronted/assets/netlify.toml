@@ -1,6 +1,6 @@
 [build]
   base = "./"
-  publish = "docs/"
+  publish = "dist/sale_fronted"
   command = "npm run build:production"
 
 [context.production.environment]
@@ -10,8 +10,6 @@
   command = "npm run build:preview"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  /*   /index.html    200
 
 
