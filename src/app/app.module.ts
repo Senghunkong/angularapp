@@ -22,6 +22,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SaleComponent } from './components/admin/sale/sale.component';
 
 
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+ // add new comment for github page
+@NgModule({
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }]
+})
+
 
 
 @NgModule({
