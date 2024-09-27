@@ -15,7 +15,7 @@
           "options": {
             "baseHref": "./",
           
-            "outputPath": "dist/sale_fronted",
+            "outputPath": "docs/",
             "index": "docs/index.html",
             "main": "docs/main.ts",
             
