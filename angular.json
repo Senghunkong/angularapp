@@ -14,17 +14,18 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "baseHref": "./",
+          
             "outputPath": "dist/sale_fronted",
-            "index": "src/index.html",
-            "main": "src/main.ts",
+            "index": "docs/index.html",
+            "main": "docs/main.ts",
             
             "polyfills": [
-              "src/polyfills.ts"
+              "docs/polyfills.ts"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "docs/favicon.ico",
+              "docs/assets"
             ],
             "styles": [
               "src/styles.css",
