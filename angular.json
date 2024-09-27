@@ -31,7 +31,7 @@
 
 
             
-  "outputPath": "dist/sale_fronted",
+  "outputPath": "docs/",
   "index": "src/index.html",
   "main": "src/main.ts",
   "polyfills": "src/polyfills.ts",
