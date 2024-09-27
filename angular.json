@@ -7,38 +7,24 @@
       "projectType": "application",
       "schematics": {},
       "root": "",
-      "sourceRoot": "docs",
+      "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-
-            /*
             "baseHref": "./",
-            "outputPath": "docs/",
-            "index": "docs/index.html",
-            "main": "docs/main.ts",
-            
+            "outputPath": "dist/sale_fronted",
+            "index": "src/index.html",
+            "main": "src/main.ts",
             "polyfills": [
-              "docs/polyfills.ts"
+              "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "docs/favicon.ico",
-              "docs/assets"
-            ],*/
-
-
-            
-  "outputPath": "./",
-  "index": "docs/index.html",
-  "main": "docs/main.ts",
-  "polyfills": "docs/polyfills.ts",
-  "tsConfig": "docs/tsconfig.app.json",
-
-
-
+              "src/favicon.ico",
+              "src/assets"
+            ],
 
 
             "styles": [
