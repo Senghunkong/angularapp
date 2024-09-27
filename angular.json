@@ -32,10 +32,10 @@
 
             
   "outputPath": "docs/",
-  "index": "src/index.html",
-  "main": "src/main.ts",
-  "polyfills": "src/polyfills.ts",
-  "tsConfig": "src/tsconfig.app.json",
+  "index": "docs/index.html",
+  "main": "docs/main.ts",
+  "polyfills": "docs/polyfills.ts",
+  "tsConfig": "docs/tsconfig.app.json",
 
 
 
