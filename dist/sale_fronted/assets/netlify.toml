@@ -1,6 +1,6 @@
 [build]
   base = "./"
-  publish = "dist/sale_fronted"
+  publish = "docs/"
   command = "npm run build:production"
 
 [context.production.environment]
